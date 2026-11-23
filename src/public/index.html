@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electro Store | Sua loja de eletrônicos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">E</span>
+                <span>Electro<span class="logo-highlight">Store</span></span>
+            </a>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="O que você está procurando?">
+                <button id="searchButton" aria-label="Pesquisar"><img src="./assets/search_24dp.svg"
+                        alt="search"></button>
+            </div>
+
+            <div class="header-actions">
+                <a href="login.html" class="account-link">
+                    <span class="action-icon">
+                        <img src="./assets/person_24dp.svg" alt="Minha conta">
+                    </span>
+                    <span>
+                        <small>Olá, visitante</small>
+                        <strong>Entrar / Cadastrar</strong>
+                    </span>
+                </a>
+
+                <button class="cart-button" id="cartButton">
+                    <span class="action-icon">
+                        <img src="./assets/shopping_cart_24dp.svg" alt="cart">
+                    </span>
+                    <span>Carrinho</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="navigation">
+        <div class="container nav-content">
+            <a href="#">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#rodape">Contato</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero" id="ofertas">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="hero-label">TECNOLOGIA PARA VOCÊ</span>
+
+                    <h1>
+                        Tudo o que você precisa
+                        <span>em um só lugar.</span>
+                    </h1>
+
+                    <p>
+                        Encontre os melhores produtos eletrônicos
+                        com preços especiais e compre com facilidade.
+                    </p>
+
+                    <a href="#produtos" class="primary-button">
+                        Explorar produtos →
+                    </a>
+                </div>
+
+                <div class="hero-decoration">
+                    <div class="hero-circle">
+                        <span>⚡</span>
+                    </div>
+                    <span class="decoration-small">TECNOLOGIA</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENEFÍCIOS -->
+        <section class="benefits">
+            <div class="container benefits-grid">
+
+                <div class="benefit">
+                    <span class="benefit-icon">
+                        <img src="./assets/local_shipping_24dp.svg" alt="shipping">
+                    </span>
+                    <div>
+                        <strong>Entrega facilitada</strong>
+                        <small>Consulte as condições</small>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">
+                        <img src="./assets/lock_24dp.svg" alt="lock">
+                    </span>
+                    <div>
+                        <strong>Compra segura</strong>
+                        <small>Seus dados protegidos</small>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">
+                        <img src="./assets/payments_24dp.svg" alt="">
+                    </span>
+                    <div>
+                        <strong>Pagamento flexível</strong>
+                        <small>Opções para você</small>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <span class="benefit-icon">
+                        <img src="./assets/call_24dp.svg" alt="call">
+                    </span>
+                    <div>
+                        <strong>Atendimento</strong>
+                        <small>Conte com nossa equipe</small>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="section container" id="categorias">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">ENCONTRE O QUE PROCURA</span>
+                    <h2>Navegue por categorias</h2>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+
+                <button class="category-card" data-category="Informática">
+                    <span class="category-icon">💻</span>
+                    <strong>Informática</strong>
+                </button>
+
+                <button class="category-card" data-category="Celulares">
+                    <span class="category-icon">📱</span>
+                    <strong>Celulares</strong>
+                </button>
+
+                <button class="category-card" data-category="Áudio">
+                    <span class="category-icon">🎧</span>
+                    <strong>Áudio</strong>
+                </button>
+
+                <button class="category-card" data-category="Acessórios">
+                    <span class="category-icon">⌨️</span>
+                    <strong>Acessórios</strong>
+                </button>
+
+                <button class="category-card" data-category="Todos">
+                    <span class="category-icon">⚡</span>
+                    <strong>Todos</strong>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PRODUTOS -->
+        <section class="section products-section" id="produtos">
+            <div class="container">
+
+                <div class="section-heading products-heading">
+                    <div>
+                        <span class="section-label">SELECIONADOS PARA VOCÊ</span>
+                        <h2>Produtos em destaque</h2>
+                    </div>
+
+                    <span class="product-total" id="productTotal">
+                        6 produtos
+                    </span>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+
+                    <!-- Produto 1 -->
+                    <article class="product-card" data-category="Informática">
+                        <span class="product-tag">DESTAQUE</span>
+                        <div class="product-image">💻</div>
+                        <div class="product-info">
+                            <span class="product-category">Informática</span>
+                            <h3>Notebook Pro 15</h3>
+                            <p class="product-description">Notebook para trabalho e estudos.</p>
+                            <div class="price">
+                                <strong>R$ 3.499,90</strong>
+                                <small>ou 10x de R$ 349,99</small>
+                            </div>
+                            <button class="add-cart" data-id="1">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Produto 2 -->
+                    <article class="product-card" data-category="Celulares">
+                        <span class="product-tag discount">OFERTA</span>
+                        <div class="product-image">📱</div>
+                        <div class="product-info">
+                            <span class="product-category">Celulares</span>
+                            <h3>Smartphone Galaxy</h3>
+                            <p class="product-description">Desempenho e tecnologia no seu dia.</p>
+                            <div class="price">
+                                <strong>R$ 1.899,90</strong>
+                                <small>ou 10x de R$ 189,99</small>
+                            </div>
+                            <button class="add-cart" data-id="2">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Produto 3 -->
+                    <article class="product-card" data-category="Áudio">
+                        <div class="product-image">🎧</div>
+                        <div class="product-info">
+                            <span class="product-category">Áudio</span>
+                            <h3>Headset Gamer</h3>
+                            <p class="product-description">Áudio imersivo para seus jogos.</p>
+                            <div class="price">
+                                <strong>R$ 249,90</strong>
+                                <small>ou 5x de R$ 49,98</small>
+                            </div>
+                            <button class="add-cart" data-id="3">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Produto 4 -->
+                    <article class="product-card" data-category="Acessórios">
+                        <div class="product-image">⌨️</div>
+                        <div class="product-info">
+                            <span class="product-category">Acessórios</span>
+                            <h3>Teclado Mecânico</h3>
+                            <p class="product-description">Precisão e conforto para digitar.</p>
+                            <div class="price">
+                                <strong>R$ 329,90</strong>
+                                <small>ou 6x de R$ 54,98</small>
+                            </div>
+                            <button class="add-cart" data-id="4">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Produto 5 -->
+                    <article class="product-card" data-category="Informática">
+                        <div class="product-image">🖥️</div>
+                        <div class="product-info">
+                            <span class="product-category">Informática</span>
+                            <h3>Monitor Full HD</h3>
+                            <p class="product-description">Imagem nítida para sua rotina.</p>
+                            <div class="price">
+                                <strong>R$ 899,90</strong>
+                                <small>ou 10x de R$ 89,99</small>
+                            </div>
+                            <button class="add-cart" data-id="5">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Produto 6 -->
+                    <article class="product-card" data-category="Acessórios">
+                        <div class="product-image">🖱️</div>
+                        <div class="product-info">
+                            <span class="product-category">Acessórios</span>
+                            <h3>Mouse Sem Fio</h3>
+                            <p class="product-description">Praticidade para o seu computador.</p>
+                            <div class="price">
+                                <strong>R$ 89,90</strong>
+                                <small>ou 2x de R$ 44,95</small>
+                            </div>
+                            <button class="add-cart" data-id="6">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="empty-message" id="emptyMessage" hidden>
+                    Nenhum produto encontrado.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="newsletter">
+            <div class="container newsletter-content">
+                <div>
+                    <h2>Encontre sua próxima tecnologia!</h2>
+                    <p>Explore nosso catálogo e descubra novos produtos.</p>
+                </div>
+
+                <a href="#produtos" class="secondary-button">
+                    Ver produtos →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer" id="rodape">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">E</span>
+                    <span>Electro<span class="logo-highlight">Store</span></span>
+                </a>
+
+                <p>
+                    Tecnologia, qualidade e praticidade
+                    em um só lugar.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Institucional</h3>
+                <a href="#">Sobre a loja</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos de uso</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Atendimento</h3>
+                <a href="#">Fale conosco</a>
+                <a href="#">Dúvidas frequentes</a>
+                <a href="#">Meus pedidos</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Electro Store. Projeto acadêmico demonstrativo.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
