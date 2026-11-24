@@ -35,4 +35,4 @@ db.exec(`
     );
 `);
 
-console.log('Tabelas verificadas com sucesso!');
+console.log('Banco de dados inicializado com sucesso!');
