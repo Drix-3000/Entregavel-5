@@ -2,7 +2,7 @@
 const db = require('./connect');
 
 db.exec(`
-    CREATE TABLE IF NOT EXISTS clientes (
+    CREATE TABLE IF NOT EXISTS usuarios (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nome TEXT NOT NULL,
         email TEXT NOT NULL UNIQUE,
@@ -13,6 +13,7 @@ db.exec(`
         cidade TEXT,
         estado TEXT,
         cep TEXT,
+        tipo TEXT NOT NULL DEFAULT 'cliente',
         criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
     );
 
@@ -28,15 +29,10 @@ db.exec(`
         categoria_id INTEGER,
         preco REAL NOT NULL,
         estoque INTEGER DEFAULT 0,
-        unidade_medida TEXT NOT NULL,
         ativo INTEGER DEFAULT 1,
         criado_em DATETIME DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (categoria_id) REFERENCES categorias(id)
     );
-
-    -- COLE AQUI AS DEMAIS TABELAS
-    -- pedidos, itens_pedido, movimentacoes,
-    -- pagamentos, notas_fiscais e promissorias.
 `);
 
 console.log('Tabelas verificadas com sucesso!');

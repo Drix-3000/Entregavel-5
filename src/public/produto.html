@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto | Electro Store</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">E</span>
+                <span>Electro<span class="logo-highlight">Store</span></span>
+            </a>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="O que você está procurando?">
+                <button id="searchButton" aria-label="Pesquisar"><img src="./assets/search_24dp.svg"
+                        alt="search"></button>
+            </div>
+
+            <div class="header-actions">
+                <a href="login.html" class="account-link">
+                    <span class="action-icon">
+                        <img src="./assets/person_24dp.svg" alt="Minha conta">
+                    </span>
+                    <span>
+                        <small>Olá, visitante</small>
+                        <strong>Entrar / Cadastrar</strong>
+                    </span>
+                </a>
+
+                <button class="cart-button" id="cartButton">
+                    <span class="action-icon">
+                        <img src="./assets/shopping_cart_24dp.svg" alt="cart">
+                    </span>
+                    <span>Carrinho</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="breadcrumb">
+            <a href="index.html">Início</a> /
+            <a href="produtos.html">Produtos</a> /
+            <span>Notebook Lenovo</span>
+        </div>
+
+        <section class="product-details">
+
+            <div class="product-image">
+                <img src="img/produto1.jpg" alt="Notebook Lenovo">
+            </div>
+
+            <div class="product-info">
+                <span class="category">Informática</span>
+
+                <h1>Notebook Lenovo</h1>
+
+                <p class="description">
+                    Notebook ideal para estudos, trabalho e atividades
+                    do dia a dia, oferecendo desempenho e praticidade.
+                </p>
+
+                <p class="price">R$ 2.899,90</p>
+
+                <p class="stock">Disponibilidade: Em estoque</p>
+
+                <div class="quantity">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" value="1" min="1">
+                </div>
+
+                <button type="button" class="btn">
+                    Adicionar ao carrinho
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Electro Store. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
